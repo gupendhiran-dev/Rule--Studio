@@ -65,7 +65,7 @@ export default function RuleList({ rules, onEdit, onNew, onTest, onDelete, onTog
           <span className="text-jumio-text font-medium">Jumio Default Ruleset</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-xs text-jumio-muted">Merchant: <strong className="text-jumio-text">Vialto UAT</strong></span>
+          <span className="text-xs text-jumio-muted">Merchant: <strong className="text-jumio-text">Jumio UAT</strong></span>
           <button onClick={onReset} title="Reset to defaults" className="w-8 h-8 flex items-center justify-center rounded-md text-gray-400 hover:text-red-500 hover:bg-red-50 border-0 bg-transparent cursor-pointer transition-colors">
             <RotateCcw size={14} />
           </button>
