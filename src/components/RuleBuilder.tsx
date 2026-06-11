@@ -103,7 +103,7 @@ export default function RuleBuilder({ rule, onSave, onCancel, onTest }: Props) {
             <span className="text-jumio-text font-medium">{name || 'New Rule'}</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-jumio-muted">Merchant: <strong className="text-jumio-text">Vialto UAT</strong></span>
+            <span className="text-xs text-jumio-muted">Merchant: <strong className="text-jumio-text">Jumio UAT</strong></span>
             <button onClick={onCancel} className="btn-ghost text-xs py-1.5 px-3">Cancel</button>
             <button onClick={() => onTest(partialRule)} className="btn-outline text-xs py-1.5 px-3">
               <PlayCircle size={13} /> Test Rule
