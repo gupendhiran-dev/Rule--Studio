@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium text-white bg-jumio-green hover:bg-jumio-green-dark transition-colors cursor-pointer border-0;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium text-jumio-text bg-white border border-jumio-border hover:bg-gray-50 transition-colors cursor-pointer;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium text-jumio-muted hover:text-jumio-text hover:bg-gray-100 transition-colors cursor-pointer border-0 bg-transparent;
+  }
+  .input-field {
+    @apply w-full border border-jumio-border rounded-md px-3 py-2 text-sm text-jumio-text bg-white focus:outline-none focus:ring-2 focus:ring-jumio-green focus:border-transparent transition-all;
+  }
+  .card {
+    @apply bg-white rounded-xl border border-jumio-border;
+  }
+  .section-label {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider;
+  }
+  .tag {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold;
+  }
+  .version-pill {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-medium text-jumio-muted bg-gray-100 border border-jumio-border;
+  }
+}
